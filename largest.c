@@ -7,8 +7,8 @@ void main()
  scanf("%d",&a);
  scanf("%d",&b);
  scanf("%d",&c);
- if(a<b)
- {if(a<c)
+ if(a>b)
+ {if(a>c)
    {
     printf("%d",a);
    }
@@ -20,7 +20,10 @@ void main()
    {
        printf("%d",c);
    }
-       else("%d",b);
+       else
+       {
+        printf("%d",b);
      }
-     
+ 
+} 
 
