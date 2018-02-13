@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main(void)
+void main()
 {
     int n2,n1,num,i,rem,temp;
     scanf("%d %d",&n2,&n1);
