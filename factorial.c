@@ -8,5 +8,5 @@ void main()
     {
        s=s*i; 
     }
-    printf("%d",s);
+    printf("%d\n",s);
 }
