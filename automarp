@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c=1,d;
+    scanf("%d",&a);
+    int temp=a;
+    b=a*a;
+    while(a!=0)
+    {
+        c=c*10;
+        a=a/10;
+    }
+    d=b%c;
+    if(d==temp)
+    {
+        printf("auto marp");
+    }
+    else
+    {
+        printf("not auto marp");
+    }
+    return 0;
+}
