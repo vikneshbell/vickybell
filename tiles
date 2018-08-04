@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,n;
+    scanf("%d%d%d",&a,&b,&n);
+    c=a*b;
+    d=c/n;
+    if(c%n==0)
+    {
+        printf("filled %d",d);
+    }
+    else
+    {
+        printf("not filled %d",d);
+    }
+    return 0;
+}
