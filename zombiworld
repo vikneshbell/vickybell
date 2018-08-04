@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int a[11],b,i;
+    signed int d=0,c;
+    scanf("%d%d",&b,&c);
+    for(i=0;i<b;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<b;i++)
+    {
+        if(a[i]<c)
+        {   
+            d=d+((a[i]%2)+(a[i]/2));
+            c=c-d;
+        }
+    }
+    if(c>1)
+    {
+        printf("move to next level%d",c);
+    }
+    else
+    {
+        printf("try again %d",c);
+    }
+    return 0;
+}
