@@ -1,0 +1,30 @@
+#include<stdio.h>
+int slop(int ,int,int,int);
+int cons(int,int,int);
+int main()
+{
+    int x1,y1,x2,y2,x3,y3,x4,y4,b1,b2,X,Y;
+    float m1,m2;
+    scanf("%d%d%d%d%d%d%d%d",&x1,&y1,&x2,&y2,&x3,&y3,&x4,&y4);
+    m1=slop(x1,y1,x2,y2);
+    m2=slop(x3,y3,x4,y4);
+    b1=cons(x1,y1,m1);
+    b2=cons(x3,y3,m2);
+    Y=((b1*m2)-(b2*m1))/(m2-m1);
+    X=(Y-b2)/m2;
+    printf("%d%d",X,Y);
+    return 0;
+}
+int slop(int x1,int y1,int x2,int y2)
+{
+    int m;
+    m=(y2-y1)/(x2-x1);
+    return m;
+}
+int cons(int xa,int ya,int ma)
+{
+    int b;
+    b=ya-(ma*xa);
+    return ma;
+
+}
