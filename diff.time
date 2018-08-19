@@ -1,0 +1,32 @@
+#include<stdio.h>
+struct time
+{
+    int min;
+    int hrs;
+    int sec;
+}starttime,stoptime,diff;
+int main()
+{
+    scanf("%d%d%d",&starttime.hrs,&starttime.min,&starttime.sec);
+    scanf("%d%d%d",&stoptime.hrs,&stoptime.min,&stoptime.sec);
+    if(stoptime.sec<starttime.sec)
+    {
+        --stoptime.min;
+        stoptime.sec+=60;
+    }
+    diff.sec=stoptime.sec-starttime.sec;
+    if(stoptime.min<starttime.min)
+    {
+        --stoptime.hrs;
+        stoptime.min+=60;
+    }
+    diff.min=stoptime.min-starttime.min;
+    if(stoptime.hrs<starttime.hrs)
+    {
+        
+        stoptime.hrs+=24;
+    }
+    diff.hrs=stoptime.hrs-starttime.hrs;
+    printf("%d:%d:%d",diff.hrs,diff.min,diff.sec);
+    return 0;
+}
